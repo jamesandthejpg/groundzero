@@ -1,0 +1,7 @@
+KEYS
++ is a new section to this document
+>>> date 
+
+>>> 29/03/2026
+<GroundZero>
++ Here is where I will write what I'm doing day to day. 
