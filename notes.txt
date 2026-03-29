@@ -1,8 +1,10 @@
 KEYS
 + is a new section to this document
 >>> date 
+- comment on section
 
 >>> 29/03/2026
 <GroundZero>
 + Here is where I will write what I'm doing day to day. 
 + Testing how to use branches 
+    - Branches is relatively simple to understand > Create Branch > Edit Branch > Save & Commit > Back to main > Merge Branch into main > Done 
