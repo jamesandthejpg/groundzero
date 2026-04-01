@@ -1,49 +1,21 @@
 /* Body stuff */
 body {
     margin: 0;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
 }
 
 .herotext {
     display: flex;
-    height: 50vh;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     user-select: none;
+    letter-spacing: 1rem;
 }
 
-h1:hover {
-    font-variant: small-caps;
-    /*user-select stops the ability for the user to select the text*/
-    letter-spacing: 15px;
-    font-weight: 750;
+#welcome {
+    letter-spacing: normal;
 }
-
-
-
-
-
-
-
-
-
-
-.enterbtn {
-    background: #000000;
-    padding: 12px 20px;
-    color: #ffffff;
-    display: flex;
-    height: 50vh;
-    align-items: center;
-    justify-content: center;
-}
-
-
-
-
-
 
 /* Base button style */
 .btn {
@@ -51,10 +23,8 @@ h1:hover {
     padding: 12px 20px;
     border-radius: 100px;
     text-decoration: none;
-    font-family: Cambria;
-    background: rgb(130, 129, 129);
+    background: rgb(186, 186, 186);
     color: white;
-    transition: all 0.3s ease;
 }
 
 /* Random-ish positions */
@@ -78,28 +48,4 @@ h1:hover {
 .btn:hover {
     transform: scale(1.1);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
-}
-
-
-
-/*Logo text*/
-.logo {
-    position: relative;
-}
-
-.logo::after {
-    content: attr(data-text);
-    position: absolute;
-    bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 0.8rem;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    white-space: nowrap;
-    color: #555;
-}
-
-.logo:hover::after {
-    opacity: 1;
 }
