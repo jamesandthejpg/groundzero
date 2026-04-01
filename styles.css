@@ -11,9 +11,6 @@ body {
     justify-content: center;
 }
 
-
-
-
 /* Fonts */
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -31,4 +28,41 @@ h1 {
 p {
     font-variant: normal;
     user-select: none;
+}
+
+
+
+/* Base button style */
+.btn {
+    position: absolute;
+    padding: 12px 20px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-family: Cambria;
+    background: rgb(130, 129, 129);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+/* Random-ish positions */
+.b1 {
+    top: 30%;
+    left: 15%;
+}
+.b2 {
+    top: 80%;
+    left: 70%;
+}
+.b3 {
+    top: 20%;
+    left: 70%;
+}
+.b4 {
+    top: 75%;
+    left: 20%;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
 }
