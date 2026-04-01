@@ -1,6 +1,8 @@
 /* Body stuff */
 body {
     margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 .herotext {
@@ -9,26 +11,29 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 
-/* Fonts */
-body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-h1 {
+h1:hover {
     font-variant: small-caps;
     /*user-select stops the ability for the user to select the text*/
-    user-select: none;
-    letter-spacing: 20px;
-    font-weight: 1000;
-    font-size: 3rem;
+    letter-spacing: 15px;
+    font-weight: 750;
 }
 
-p {
-    font-variant: normal;
-    user-select: none;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -65,4 +70,28 @@ p {
 .btn:hover {
     transform: scale(1.1);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/*Logo text*/
+.logo {
+    position: relative;
+}
+
+.logo::after {
+    content: attr(data-text);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    white-space: nowrap;
+    color: #555;
+}
+
+.logo:hover::after {
+    opacity: 1;
 }
